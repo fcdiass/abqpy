@@ -45,7 +45,7 @@
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -1055,7 +1055,8 @@ it to our script file, this works, but not nicely.</p>
 <p>However, if type hints are provided in Python scripting of Abaqus, things will getting much
 easier, and that is what <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> does.</p>
 <p>The example model described in the following is simple, there is a square structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:</p>
-<a class="reference internal image-reference" href="_images/model.png"><img alt="_images/model.png" class="align-center" src="_images/model.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="_images/model.png"><img alt="_images/model.png" class="align-center" src="_images/model.png" style="width: 50%;" />
+</a>
 <h3 id="header-of-the-script">Header of the script<a class="headerlink" href="#header-of-the-script" title="Link to this heading">¶</a></h3>
 <p>Usually, when we use Python script to build the model, we need to import the following modules:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1293,9 +1294,11 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
 </div>
 <h3 id="results-of-above-example">Results of above example<a class="headerlink" href="#results-of-above-example" title="Link to this heading">¶</a></h3>
 <p>The distribution of <code class="docutils literal notranslate"><span class="pre">U3</span></code> of above model is showed as follows:</p>
-<a class="reference internal image-reference" href="_images/output.png" id="output"><img alt="_images/output.png" class="align-center" id="output" src="_images/output.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/output.png" id="output"><img alt="_images/output.png" class="align-center" id="output" src="_images/output.png" style="width: 70%;" />
+</a>
 <p>The distribution of the vertical displacement of a point in the top surface is showed as follows:</p>
-<a class="reference internal image-reference" href="_images/compression.png" id="compression"><img alt="_images/compression.png" class="align-center" id="compression" src="_images/compression.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/compression.png" id="compression"><img alt="_images/compression.png" class="align-center" id="compression" src="_images/compression.png" style="width: 70%;" />
+</a>
 <h3 id="the-whole-output-script">The whole output script<a class="headerlink" href="#the-whole-output-script" title="Link to this heading">¶</a></h3>
 <p>The whole output script of this example is showed as follows:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
@@ -1407,7 +1410,7 @@ easier, and that is what <code class="docutils literal notranslate"><span class=
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
