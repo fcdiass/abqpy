@@ -45,13 +45,13 @@
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
         <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
         <link rel="stylesheet" type="text/css" href="_static/autoclasstoc.css?v=08871587" />
-        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1048,7 +1048,8 @@
 <p>因此，我们可以使用 Python 脚本构建我们的 Abaqus 模型。 我们可以完全使用 Python 脚本构建我们的 Abak 模型，尽管它不是一个有效的方法。 通常，我们在 Abaqus/CAE 中做一些事情，并在 reply (<code class="docutils literal notranslate"><span class="pre">.rpy</span></code>) 文件中检查 Python 脚本。然后将其复制到我们的脚本文件，这样做没有任何问题，但并不是很方便。</p>
 <p>但是，如果在 Abaqus 的 Python 脚本中提供类型提示，事情就会变得更容易了，这就是 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 所做的事情。</p>
 <p>下面描述的示例很简单，有一个正方形结构，底部的垂直位移是固定的， 表面有垂直压力，Abaqus 模型如下所示：</p>
-<a class="reference internal image-reference" href="_images/model.png"><img alt="_images/model.png" class="align-center" src="_images/model.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="_images/model.png"><img alt="_images/model.png" class="align-center" src="_images/model.png" style="width: 50%;" />
+</a>
 <h3 id="header-of-the-script">脚本的导入部分<a class="headerlink" href="#header-of-the-script" title="Link to this heading">¶</a></h3>
 <p>通常，当我们使用 Python 脚本构建模型时，我们需要导入以下模块：</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1286,9 +1287,11 @@
 </div>
 <h3 id="results-of-above-example">以上示例的结果<a class="headerlink" href="#results-of-above-example" title="Link to this heading">¶</a></h3>
 <p>上述模型的 <code class="docutils literal notranslate"><span class="pre">U3</span></code> 的分布如下：</p>
-<a class="reference internal image-reference" href="_images/output.png" id="output"><img alt="_images/output.png" class="align-center" id="output" src="_images/output.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/output.png" id="output"><img alt="_images/output.png" class="align-center" id="output" src="_images/output.png" style="width: 70%;" />
+</a>
 <p>上表面某点的竖直位移的分布如图所示：</p>
-<a class="reference internal image-reference" href="_images/compression.png" id="compression"><img alt="_images/compression.png" class="align-center" id="compression" src="_images/compression.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/compression.png" id="compression"><img alt="_images/compression.png" class="align-center" id="compression" src="_images/compression.png" style="width: 70%;" />
+</a>
 <h3 id="the-whole-output-script">完整输出脚本<a class="headerlink" href="#the-whole-output-script" title="Link to this heading">¶</a></h3>
 <p>此示例的完整脚本如下：</p>
 <div class="literal-block-wrapper docutils container" id="id2">
@@ -1400,7 +1403,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -1487,7 +1490,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
         <script src="_static/translations.js?v=beaddf03"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="_static/design-tabs.js?v=36754332"></script>
+        <script src="_static/design-tabs.js?v=f930bc37"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script id="MathJax-script" src="_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
     
