@@ -1,15 +1,23 @@
-:py:mod:`abqpy.decorators`
-==========================
+abqpy.decorators
+================
 
 .. py:module:: abqpy.decorators
 
 
-Module Contents
----------------
+Attributes
+----------
+
+.. autoapisummary::
+
+   abqpy.decorators.add_link_in_class_docstring
+   abqpy.decorators.add_link_in_module_docstring
+   abqpy.decorators.add_link_in_method_docstring
+   abqpy.decorators.add_link_in_function_docstring
+   abqpy.decorators.class_suffix
 
 
 Functions
-~~~~~~~~~
+---------
 
 .. autoapisummary::
 
@@ -23,18 +31,8 @@ Functions
    abqpy.decorators.abaqus_class_doc
 
 
-
-Attributes
-~~~~~~~~~~
-
-.. autoapisummary::
-
-   abqpy.decorators.add_link_in_class_docstring
-   abqpy.decorators.add_link_in_module_docstring
-   abqpy.decorators.add_link_in_method_docstring
-   abqpy.decorators.add_link_in_function_docstring
-   abqpy.decorators.class_suffix
-
+Module Contents
+---------------
 
 .. py:function:: class_or_module_link(type: str, class_or_module_name: str, prefix='', suffix='', label=None) -> Tuple[str, str]
 
@@ -99,11 +97,7 @@ Attributes
 
 .. py:data:: add_link_in_class_docstring
 
-   
-
 .. py:data:: add_link_in_module_docstring
-
-   
 
 .. py:function:: add_link_in_method_or_function_docstring(type: str, class_or_module_name: str, method_or_function_name: str, docstring: str, prefix='', suffix='', label=None) -> str
 
@@ -130,11 +124,7 @@ Attributes
 
 .. py:data:: add_link_in_method_docstring
 
-   
-
 .. py:data:: add_link_in_function_docstring
-
-   
 
 .. py:function:: abaqus_function_doc(func)
 
@@ -147,8 +137,6 @@ Attributes
 
 
 .. py:data:: class_suffix
-
-   
 
 .. py:function:: abaqus_method_doc(method)
 
