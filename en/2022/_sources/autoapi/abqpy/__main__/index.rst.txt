@@ -1,21 +1,19 @@
-:py:mod:`abqpy.__main__`
-========================
+abqpy.__main__
+==============
 
 .. py:module:: abqpy.__main__
 
 
-Module Contents
----------------
-
-
 Functions
-~~~~~~~~~
+---------
 
 .. autoapisummary::
 
    abqpy.__main__.main
 
 
+Module Contents
+---------------
 
 .. py:function:: main()
 
