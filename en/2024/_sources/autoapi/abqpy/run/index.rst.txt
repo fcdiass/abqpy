@@ -1,21 +1,19 @@
-:py:mod:`abqpy.run`
-===================
+abqpy.run
+=========
 
 .. py:module:: abqpy.run
 
 
-Module Contents
----------------
-
-
 Functions
-~~~~~~~~~
+---------
 
 .. autoapisummary::
 
    abqpy.run.run
 
 
+Module Contents
+---------------
 
 .. py:function:: run(cae: bool = True) -> None
 

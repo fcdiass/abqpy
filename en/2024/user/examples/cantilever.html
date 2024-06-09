@@ -21,13 +21,13 @@
 <link href="../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../_static/graphviz.css?v=fd3f3429" rel="stylesheet" type="text/css"/>
 <link href="../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
 <link href="../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
 <link href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
 <link href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
 <link href="../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
-<link href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
+<link href="../../_static/sphinx-design.min.css?v=87e54e7c" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -450,7 +450,8 @@
 <h2 id="about-the-cantilever-beam-example">About the cantilever beam example<a class="headerlink" href="#about-the-cantilever-beam-example" title="Link to this heading">¶</a></h2>
 <p>The example leads you through the Abaqus/CAE modeling process by visiting each of the modules and shows you the basic steps to create and analyze a simple model. In <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb">Creating and Analyzing a Simple Model in Abaqus/CAE</a>, you create a model of a steel cantilever beam and load its top surface. You then analyze the beam and plot the resulting stresses and displacements. <a class="hxr-hoverxref hxr-tooltip reference internal" href="#gst-beam"><span class="std std-numref">Fig. 22</span></a> illustrates the model that you create and analyze.</p>
 <figure class="align-center" id="id1">
-<span id="gst-beam"></span><a class="reference internal image-reference" href="../../_images/gst-beam.png"><img alt="../../_images/gst-beam.png" src="../../_images/gst-beam.png" style="width: 100%;"/></a>
+<span id="gst-beam"></span><a class="reference internal image-reference" href="../../_images/gst-beam.png"><img alt="../../_images/gst-beam.png" src="../../_images/gst-beam.png" style="width: 100%;"/>
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 22 </span><span class="caption-text"><span class="caption-text">
 A loaded cantilever beam.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></span></p></figcaption>
@@ -555,8 +556,8 @@ A loaded cantilever beam.</span><a class="headerlink" href="#id1" title="Permali
 
 <span class="c1"># Create a part instance.</span>
 
-<a class="sphinx-codeautolink-a" href="../../reference/mdb/model/index.html#abaqus.Model.ModelBase.ModelBase.rootAssembly" title="abaqus.Model.ModelBase.ModelBase.rootAssembly"><span class="n">myAssembly</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/mdb/model/index.html#abaqus.Model.ModelBase.ModelBase.rootAssembly" title="abaqus.Model.ModelBase.ModelBase.rootAssembly"><span class="n">myModel</span><span class="o">.</span><span class="n">rootAssembly</span></a>
-<span class="n">myInstance</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/mdb/model/part_assembly/assembly.html#abaqus.Assembly.AssemblyBase.AssemblyBase.Instance" title="abaqus.Assembly.AssemblyBase.AssemblyBase.Instance"><span class="n">myAssembly</span><span class="o">.</span><span class="n">Instance</span></a><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"beamInstance"</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">myBeam</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+<span class="n">myAssembly</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">rootAssembly</span>
+<span class="n">myInstance</span> <span class="o">=</span> <span class="n">myAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">"beamInstance"</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">myBeam</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
 
 <span class="c1"># -------------------------------------------------------</span>
 
@@ -609,21 +610,21 @@ A loaded cantilever beam.</span><a class="headerlink" href="#id1" title="Permali
 
 <span class="n">region</span> <span class="o">=</span> <span class="p">(</span><span class="n">myInstance</span><span class="o">.</span><span class="n">cells</span><span class="p">,)</span>
 <a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elemType</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span></a><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D8I</span><span class="p">,</span> <span class="n">elemLibrary</span><span class="o">=</span><span class="n">STANDARD</span><span class="p">)</span>
-<a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType" title="abaqus.Mesh.MeshAssembly.MeshAssembly.setElementType"><span class="n">myAssembly</span><span class="o">.</span><span class="n">setElementType</span></a><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="n">region</span><span class="p">,</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elemType</span></a><span class="p">,))</span>
+<span class="n">myAssembly</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="n">region</span><span class="p">,</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshPart.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elemType</span></a><span class="p">,))</span>
 
 <span class="c1"># Seed the part instance.</span>
 
-<a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance" title="abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance"><span class="n">myAssembly</span><span class="o">.</span><span class="n">seedPartInstance</span></a><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">myInstance</span><span class="p">,),</span> <span class="n">size</span><span class="o">=</span><span class="mf">10.0</span><span class="p">)</span>
+<span class="n">myAssembly</span><span class="o">.</span><span class="n">seedPartInstance</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">myInstance</span><span class="p">,),</span> <span class="n">size</span><span class="o">=</span><span class="mf">10.0</span><span class="p">)</span>
 
 <span class="c1"># Mesh the part instance.</span>
 
-<a class="sphinx-codeautolink-a" href="../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh" title="abaqus.Mesh.MeshAssembly.MeshAssembly.generateMesh"><span class="n">myAssembly</span><span class="o">.</span><span class="n">generateMesh</span></a><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">myInstance</span><span class="p">,))</span>
+<span class="n">myAssembly</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">myInstance</span><span class="p">,))</span>
 
 <span class="c1"># Display the meshed beam.</span>
 
 <span class="n">myViewport</span><span class="o">.</span><span class="n">assemblyDisplay</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">mesh</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
 <span class="n">myViewport</span><span class="o">.</span><span class="n">assemblyDisplay</span><span class="o">.</span><span class="n">meshOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">meshTechnique</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
-<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><a class="sphinx-codeautolink-a" href="../../reference/mdb/model/index.html#abaqus.Model.ModelBase.ModelBase.rootAssembly" title="abaqus.Model.ModelBase.ModelBase.rootAssembly"><span class="n">myAssembly</span></a><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myAssembly</span><span class="p">)</span>
 
 <span class="c1"># -------------------------------------------------------</span>
 
@@ -701,7 +702,7 @@ A loaded cantilever beam.</span><a class="headerlink" href="#id1" title="Permali
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -769,7 +770,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../_static/design-tabs.js?v=36754332"></script>
+<script src="../../_static/design-tabs.js?v=f930bc37"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
 <script id="MathJax-script" src="../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
