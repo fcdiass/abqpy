@@ -1,14 +1,19 @@
-:py:mod:`abqpy.cli`
-===================
+abqpy.cli
+=========
 
 .. py:module:: abqpy.cli
 
 
-Module Contents
----------------
+Attributes
+----------
+
+.. autoapisummary::
+
+   abqpy.cli.abaqus
+
 
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
@@ -16,15 +21,8 @@ Classes
    abqpy.cli.AbqpyCLI
 
 
-
-
-Attributes
-~~~~~~~~~~
-
-.. autoapisummary::
-
-   abqpy.cli.abaqus
-
+Module Contents
+---------------
 
 .. py:class:: AbqpyCLIBase
 
@@ -72,8 +70,6 @@ Attributes
       Miscellaneous commands for backward compatibility.
 
    .. py:attribute:: viewer
-
-      
 
    .. py:method:: cae(script: str, *args, database: str | None = None, replay: str | None = None, recover: str | None = None, startup: str | None = None, gui: bool = False, envstartup: bool = True, savedOptions: bool = True, savedGuiPrefs: bool = True, startupDialog: bool = True, custom: str | None = None, guiTester: str | None = None, guiRecord: bool | None = None)
 
@@ -159,138 +155,92 @@ Attributes
 
    .. py:method:: help(*args, **options)
 
-
    .. py:method:: information(*args, **options)
-
 
    .. py:method:: whereami(*args, **options)
 
-
    .. py:method:: cse(*args, **options)
-
 
    .. py:method:: cosimulation(*args, **options)
 
-
    .. py:method:: fmu(*args, **options)
-
 
    .. py:method:: script(*args, **options)
 
-
    .. py:method:: doc(*args, **options)
-
 
    .. py:method:: licensing(*args, **options)
 
-
    .. py:method:: ascfil(*args, **options)
-
 
    .. py:method:: append(*args, **options)
 
-
    .. py:method:: findkeyword(*args, **options)
-
 
    .. py:method:: fetch(*args, **options)
 
-
    .. py:method:: make(*args, **options)
-
 
    .. py:method:: upgrade(*args, **options)
 
-
    .. py:method:: sim_version(*args, **options)
-
 
    .. py:method:: odb2sim(*args, **options)
 
-
    .. py:method:: odbreport(*args, **options)
-
 
    .. py:method:: restartjoin(*args, **options)
 
-
    .. py:method:: substructurecombine(*args, **options)
-
 
    .. py:method:: substructurerecover(*args, **options)
 
-
    .. py:method:: odbcombine(*args, **options)
-
 
    .. py:method:: networkDBConnector(*args, **options)
 
-
    .. py:method:: emloads(*args, **options)
-
 
    .. py:method:: mtxasm(*args, **options)
 
-
    .. py:method:: fromnastran(*args, **options)
-
 
    .. py:method:: tonastran(*args, **options)
 
-
    .. py:method:: fromansys(*args, **options)
-
 
    .. py:method:: frompamcrash(*args, **options)
 
-
    .. py:method:: fromradioss(*args, **options)
-
 
    .. py:method:: toOutput2(*args, **options)
 
-
    .. py:method:: fromdyna(*args, **options)
-
 
    .. py:method:: tozaero(*args, **options)
 
-
    .. py:method:: adams(*args, **options)
-
 
    .. py:method:: tosimpack(*args, **options)
 
-
    .. py:method:: fromsimpack(*args, **options)
-
 
    .. py:method:: toexcite(*args, **options)
 
-
    .. py:method:: moldflow(*args, **options)
-
 
    .. py:method:: encrypt(*args, **options)
 
-
    .. py:method:: decrypt(*args, **options)
-
 
    .. py:method:: suspend(*args, **options)
 
-
    .. py:method:: resume(*args, **options)
 
-
    .. py:method:: terminate(*args, **options)
-
 
    .. py:method:: sysVerify(*args, **options)
 
 
-
 .. py:data:: abaqus
-
-   
 

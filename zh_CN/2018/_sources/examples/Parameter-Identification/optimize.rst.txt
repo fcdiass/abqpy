@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_examples_Parameter-Identification_optimize.py>`
-        to download the full example code
+        to download the full example code.
 
 .. rst-class:: sphx-glr-example-title
 
@@ -54,9 +54,10 @@ The output of this script is:
 
 The model script of this example can be found :doc:`here <compression>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-73
+.. GENERATED FROM PYTHON SOURCE LINES 38-74
 
 .. code-block:: Python
+
 
     import os
 
