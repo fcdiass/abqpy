@@ -21,13 +21,13 @@
 <link href="../../../_static/css/tooltipster-sideTip-light.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/graphviz.css?v=eafc0fe6" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/graphviz.css?v=fd3f3429" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-design.min.css?v=87e54e7c" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -520,7 +520,8 @@
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">float</span></code> function on the third line converts the string returned by <code class="docutils literal notranslate"><span class="pre">getInput</span></code> into a floating point number. The following figure shows the dialog box that appears when this script is executed:</p>
 <figure class="align-center" id="utl-getinput-nls">
-<a class="reference internal image-reference" href="../../../_images/utl-getinput-nls.png"><img alt="../../../_images/utl-getinput-nls.png" src="../../../_images/utl-getinput-nls.png" style="width: 50%;"/></a>
+<a class="reference internal image-reference" href="../../../_images/utl-getinput-nls.png"><img alt="../../../_images/utl-getinput-nls.png" src="../../../_images/utl-getinput-nls.png" style="width: 50%;"/>
+</a>
 </figure>
 <p>The next example shows how to modify a macro recorded by the <strong>Macro Manager</strong> in Abaqus/CAE to use the getInput function. The following text shows a macro named <code class="docutils literal notranslate"><span class="pre">createViewport</span></code> that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file <code class="docutils literal notranslate"><span class="pre">abaqusMacros.py</span></code> in your local or home directory.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
@@ -546,7 +547,8 @@
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">eval</span></code> function in the third line of the macro converts the string returned by the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function into two integers. When you supply the default values shown in this example to the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function, the prompt and the text field in the dialog box that appears are shown in the following figure. If the user clicks <strong>[OK]</strong> or presses <strong>[Enter]</strong>, the default values are accepted and returned to the <code class="docutils literal notranslate"><span class="pre">getInput</span></code> function. If the user clicks <strong>[Cancel]</strong>, None is returned.</p>
 <figure class="align-center" id="utl-getinput-default-nls">
-<a class="reference internal image-reference" href="../../../_images/utl-getinput-default-nls.png"><img alt="../../../_images/utl-getinput-default-nls.png" src="../../../_images/utl-getinput-default-nls.png" style="width: 50%;"/></a>
+<a class="reference internal image-reference" href="../../../_images/utl-getinput-default-nls.png"><img alt="../../../_images/utl-getinput-default-nls.png" src="../../../_images/utl-getinput-default-nls.png" style="width: 50%;"/>
+</a>
 </figure>
 <h2 id="requesting-multiple-inputs-from-the-user">Requesting multiple inputs from the user<a class="headerlink" href="#requesting-multiple-inputs-from-the-user" title="Link to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> function displays a dialog box in the center of the main window, and the user enters the requested values in text fields in the dialog box. The values are returned to the executing script as a sequence of Strings after the user clicks the <strong>[OK]</strong> button or presses <strong>[Enter]</strong>. Optionally, you can specify default values to be displayed in the text fields. For more information, see <code class="xref py py-func docutils literal notranslate"><span class="pre">getInputs()</span></code>.</p>
@@ -564,7 +566,8 @@
 </div>
 <p>The following figure shows the dialog box that these statements create:</p>
 <figure class="align-center" id="utl-getinputs-nls">
-<a class="reference internal image-reference" href="../../../_images/utl-getinputs-nls.png"><img alt="../../../_images/utl-getinputs-nls.png" src="../../../_images/utl-getinputs-nls.png" style="width: 50%;"/></a>
+<a class="reference internal image-reference" href="../../../_images/utl-getinputs-nls.png"><img alt="../../../_images/utl-getinputs-nls.png" src="../../../_images/utl-getinputs-nls.png" style="width: 50%;"/>
+</a>
 </figure>
 <p>The <code class="docutils literal notranslate"><span class="pre">fields</span></code> argument to the <code class="docutils literal notranslate"><span class="pre">getInputs</span></code> method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">fields</span> <span class="o">=</span> <span class="p">((</span><span class="s2">"Width"</span><span class="p">,</span> <span class="s2">""</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Length"</span><span class="p">,</span> <span class="s2">""</span><span class="p">),</span> <span class="p">(</span><span class="s2">"Height"</span><span class="p">,</span> <span class="s2">""</span><span class="p">))</span>
@@ -593,7 +596,8 @@
 </div>
 <p>The following figure shows the dialog box that appears when this script is executed:</p>
 <figure class="align-center" id="utl-getwarningreply-nls">
-<a class="reference internal image-reference" href="../../../_images/utl-getwarningreply-nls.png"><img alt="../../../_images/utl-getwarningreply-nls.png" src="../../../_images/utl-getwarningreply-nls.png" style="width: 50%;"/></a>
+<a class="reference internal image-reference" href="../../../_images/utl-getwarningreply-nls.png"><img alt="../../../_images/utl-getwarningreply-nls.png" src="../../../_images/utl-getwarningreply-nls.png" style="width: 50%;"/>
+</a>
 </figure>
 </article>
 </div>
@@ -643,7 +647,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
@@ -712,7 +716,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
 <script src="../../../_static/translations.js?v=beaddf03"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-<script src="../../../_static/design-tabs.js?v=36754332"></script>
+<script src="../../../_static/design-tabs.js?v=f930bc37"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
 <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
 </body>
