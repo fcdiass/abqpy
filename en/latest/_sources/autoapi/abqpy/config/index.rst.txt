@@ -1,14 +1,22 @@
-:py:mod:`abqpy.config`
-======================
+abqpy.config
+============
 
 .. py:module:: abqpy.config
 
 
-Module Contents
----------------
+Attributes
+----------
+
+.. autoapisummary::
+
+   abqpy.config.defaults
+   abqpy.config.options
+   abqpy.config.trues
+   abqpy.config.config
+
 
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
@@ -19,18 +27,8 @@ Classes
    abqpy.config.AbaqusCommandOptions
 
 
-
-
-Attributes
-~~~~~~~~~~
-
-.. autoapisummary::
-
-   abqpy.config.defaults
-   abqpy.config.options
-   abqpy.config.trues
-   abqpy.config.config
-
+Module Contents
+---------------
 
 .. py:class:: CompatibleBaseModel(/, **data: Any)
 
@@ -214,69 +212,64 @@ Attributes
    .. autoclasstoc::
 
    .. py:attribute:: database
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: replay
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: recover
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: startup
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: gui
-      :type: bool
+      :type:  bool
       :value: False
 
-      
 
    .. py:attribute:: envstartup
-      :type: bool
+      :type:  bool
       :value: True
 
-      
 
    .. py:attribute:: savedOptions
-      :type: bool
+      :type:  bool
       :value: True
 
-      
 
    .. py:attribute:: savedGuiPrefs
-      :type: bool
+      :type:  bool
       :value: True
 
-      
 
    .. py:attribute:: startupDialog
-      :type: bool
+      :type:  bool
       :value: True
 
-      
 
    .. py:attribute:: custom
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: guiTester
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: guiRecord
-      :type: Optional[bool]
+      :type:  Optional[bool]
+      :value: None
 
-      
 
 
 .. py:class:: AbaqusPythonConfig(/, **data: Any)
@@ -358,14 +351,14 @@ Attributes
    .. autoclasstoc::
 
    .. py:attribute:: sim
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
    .. py:attribute:: log
-      :type: Optional[str]
+      :type:  Optional[str]
+      :value: None
 
-      
 
 
 .. py:class:: AbaqusConfig(/, **data: Any)
@@ -447,38 +440,30 @@ Attributes
    .. autoclasstoc::
 
    .. py:attribute:: cae
-      :type: AbaqusCAEConfig
-
-      
+      :type:  AbaqusCAEConfig
 
    .. py:attribute:: python
-      :type: AbaqusPythonConfig
-
-      
+      :type:  AbaqusPythonConfig
 
    .. py:attribute:: debug
-      :type: bool
+      :type:  bool
       :value: False
 
-      
 
    .. py:attribute:: skip_abaqus
-      :type: bool
+      :type:  bool
       :value: False
 
-      
 
    .. py:attribute:: make_docs
-      :type: bool
+      :type:  bool
       :value: False
 
-      
 
    .. py:attribute:: cli_traceback_limit
-      :type: int
+      :type:  int
       :value: 0
 
-      
 
 
 .. py:class:: AbaqusCommandOptions(/, **data: Any)
@@ -562,18 +547,11 @@ Attributes
 
 .. py:data:: defaults
 
-   
-
 .. py:data:: options
-
-   
 
 .. py:data:: trues
    :value: ['true', '1', 'on', 'yes']
 
-   
 
 .. py:data:: config
-
-   
 
