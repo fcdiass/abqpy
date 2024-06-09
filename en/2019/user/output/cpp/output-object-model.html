@@ -45,13 +45,13 @@
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
         <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=eafc0fe6" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
         <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=61a4c737" />
         <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
         <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
         <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
         <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css?v=08871587" />
-        <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+        <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=87e54e7c" />
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1206,7 +1206,8 @@
 </ul>
 <p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#odb-model-nls-cpp"><span class="std std-numref">Fig. 32</span></a> shows the model data object model.</p>
 <figure class="align-center" id="id1">
-<span id="odb-model-nls-cpp"></span><a class="reference internal image-reference" href="../../../_images/odb-model-nls.png"><img alt="../../../_images/odb-model-nls.png" src="../../../_images/odb-model-nls.png" style="width: 100%;" /></a>
+<span id="odb-model-nls-cpp"></span><a class="reference internal image-reference" href="../../../_images/odb-model-nls.png"><img alt="../../../_images/odb-model-nls.png" src="../../../_images/odb-model-nls.png" style="width: 100%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 32 </span><span class="caption-text"><span class="caption-text">
 The model data object model.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></figcaption>
@@ -1223,7 +1224,8 @@ The model data object model.</span><a class="headerlink" href="#id1" title="Perm
 <li><p><strong>Field output</strong></p>
 <p>Field output is intended for infrequent requests for a large portion of the model and can be used to generate contour plots, animations, symbol plots, and displaced shape plots in the Visualization module of Abaqus/CAE. You can also use field output to generate an <strong>X - Y</strong> data plot. Only complete sets of basic variables (for example, all the stress or strain components) can be requested as field output. Field output is composed of a cloud of data values (e.g., stress tensors at each integration point for all elements). Each data value has a location, type, and value. You use the regions defined in the model data, such as an element set, to access subsets of the field output data. <a class="hxr-hoverxref hxr-tooltip reference internal" href="#odb-field-nls-1"><span class="std std-numref">Fig. 33</span></a> shows the field output data object model within an output database.</p>
 <figure class="align-center" id="id2">
-<span id="odb-field-nls-1"></span><a class="reference internal image-reference" href="../../../_images/odb-field-nls.png"><img alt="../../../_images/odb-field-nls.png" src="../../../_images/odb-field-nls.png" style="width: 100%;" /></a>
+<span id="odb-field-nls-1"></span><a class="reference internal image-reference" href="../../../_images/odb-field-nls.png"><img alt="../../../_images/odb-field-nls.png" src="../../../_images/odb-field-nls.png" style="width: 100%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 33 </span><span class="caption-text"><span class="caption-text">
 The field output data object model.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></figcaption>
@@ -1240,7 +1242,8 @@ The field output data object model.</span><a class="headerlink" href="#id2" titl
 </ul>
 <p>The output from all history requests that relate to a particular point or region is then collected in one HistoryRegion object. <a class="hxr-hoverxref hxr-tooltip reference internal" href="#odb-history-nls-2"><span class="std std-numref">Fig. 34</span></a> shows the history output data object model within an output database.</p>
 <figure class="align-center" id="id3">
-<span id="odb-history-nls-2"></span><a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 100%;" /></a>
+<span id="odb-history-nls-2"></span><a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 100%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 34 </span><span class="caption-text"><span class="caption-text">
 The history output data.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></figcaption>
@@ -1321,7 +1324,7 @@ The history output data.</span><a class="headerlink" href="#id3" title="Permalin
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    7.3.7.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -1407,7 +1410,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="../../../_static/design-tabs.js?v=36754332"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
         <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script id="MathJax-script" src="../../../_static/mathjax/tex-mml-chtml.js?v=cadf963e"></script>
     
