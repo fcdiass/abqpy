@@ -1,8 +1,68 @@
+from __future__ import annotations
+
 import re
-from functools import partial
-from typing import Tuple
+from functools import partial, update_wrapper
+from typing import MutableMapping, Tuple, TypeVar
 
 from . import __version__ as version
+
+T = TypeVar("T")
+
+
+def wrap_class_init(func: T, *, attr: str, key: str, index: int) -> T:
+    """Wrap the class __init__ method to update the attribute with the object.
+
+    For example, the following code::
+
+        class MaterialModel:
+
+            Material = wrap_class_init(Material.__init__, attr="materials", key="name", index=0)
+
+    is equivalent to::
+
+        class MaterialModel:
+
+            def Material(self, name: str, *args, **kwargs):
+                obj = Material(name, **kwargs)
+                self.materials[name] = obj
+                return obj
+
+    if the `materials` attribute is a dictionary. Otherwise, it is equivalent to::
+
+        class MaterialModel:
+
+            def Material(self, name, *args, **kwargs):
+                obj = Material(name, **kwargs)
+                setattr(self, "materials", obj)
+                return obj
+
+    Parameters
+    ----------
+    func : T
+        The function to wrap.
+    attr : str
+        The attribute to update. If the attribute is a dictionary, the key is used as the key in the dictionary.
+        Otherwise, the attribute is replaced directly with the object.
+    key : str
+        The key in the keyword arguments to use as the key in the attribute.
+    index : int, optional
+        The index of the key in the positional arguments if the key is not in the keyword arguments.
+
+    Returns
+    -------
+    The wrapped function.
+    """
+
+    def wrapped(self, *args, **kwargs):
+        obj = func(*args, **kwargs)  # type: ignore
+        attribute_to_update = getattr(self, attr)
+        if isinstance(attribute_to_update, MutableMapping):
+            attribute_to_update[kwargs.get(key, args[index])] = obj
+        else:
+            setattr(self, attr, obj)
+        return obj
+
+    return update_wrapper(wrapped, func)  # type: ignore
 
 
 def class_or_module_link(
