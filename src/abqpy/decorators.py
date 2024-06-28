@@ -62,7 +62,7 @@ def wrap_class_init(func: T, *, attr: str, key: str, index: int) -> T:
             setattr(self, attr, obj)
         return obj
 
-    return update_wrapper(wrapped, func)  # type: ignore
+    return abaqus_method_doc(update_wrapper(wrapped, func))  # type: ignore
 
 
 def class_or_module_link(
