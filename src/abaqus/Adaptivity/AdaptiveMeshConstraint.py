@@ -46,7 +46,7 @@ class AdaptiveMeshConstraint:
         category: Literal[C.THERMAL, C.MECHANICAL],
         region: Region,
         localCsys: DatumCsys | None = None,
-    ):
+    ) -> "AdaptiveMeshConstraint":  # noqa
         """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian
         (ALE) style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit
         constructor. The methods and members of the AdaptiveMeshConstraint object are common to all objects

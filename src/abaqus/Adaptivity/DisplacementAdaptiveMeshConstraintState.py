@@ -126,7 +126,7 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
             | None
         ) = None,
         amplitude: str = "",
-    ):
+    ) -> "DisplacementAdaptiveMeshConstraintState":  # noqa
         """
 
         .. note::

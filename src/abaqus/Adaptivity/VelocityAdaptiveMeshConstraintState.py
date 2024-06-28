@@ -120,7 +120,7 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
             | None
         ) = None,
         amplitude: str = "",
-    ):
+    ) -> "VelocityAdaptiveMeshConstraintState":  # noqa
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an Arbitrary
         Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step. One instance of this object
         is created internally by the VelocityAdaptiveMeshConstraint object for each step. The instance is also

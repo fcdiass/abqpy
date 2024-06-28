@@ -56,7 +56,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         amplitude: Union[str, Literal[C.UNSET]] = UNSET,
         localCsys: DatumCsys | None = None,
         motionType: Literal[C.INDEPENDENT, C.FOLLOW, C.USER_DEFINED] = INDEPENDENT,
-    ):
+    ) -> "VelocityAdaptiveMeshConstraint":  # noqa
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
         .. note::

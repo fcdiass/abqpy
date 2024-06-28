@@ -69,7 +69,7 @@ class AdaptiveMeshConstraintState:
             | None
         ) = None,
         amplitude: str = "",
-    ):
+    ) -> "AdaptiveMeshConstraintState":  # noqa
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary Lagrangian
         Eularian (ALE) style AdaptiveMeshConstraintState objects. The AdaptiveMeshConstraintState object has no
         explicit constructor or methods. The members of the AdaptiveMeshConstraintState object are common to all

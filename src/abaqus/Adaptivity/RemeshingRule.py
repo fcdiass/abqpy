@@ -137,7 +137,7 @@ class RemeshingRule:
         coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         elementCountLimit: int | None = None,
-    ):
+    ) -> "RemeshingRule":  # noqa
         """This method creates a RemeshingRule object.
 
         .. note::

@@ -60,7 +60,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         amplitude: str = UNSET,
         motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
         localCsys: DatumCsys | None = None,
-    ):
+    ) -> "DisplacementAdaptiveMeshConstraint":  # noqa
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
         .. note::

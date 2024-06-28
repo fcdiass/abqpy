@@ -104,7 +104,7 @@ class AdaptiveMeshControl:
         meshConstraintAngle: float = 60,
         originalConfigurationProjectionWeight: float = 1,
         standardVolumetricSmoothingWeight: float = 0,
-    ):
+    ) -> "AdaptiveMeshControl":  # noqa
         r"""This method creates an AdaptiveMeshControl object.
 
         .. note::

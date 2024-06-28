@@ -41,7 +41,7 @@ class AdaptiveMeshDomain:
         frequency: int = 10,
         initialMeshSweeps: int = 5,
         meshSweeps: int = 1,
-    ):
+    ) -> "AdaptiveMeshDomain":  # noqa
         """This method creates an AdaptiveMeshDomain object.
 
         .. note::
