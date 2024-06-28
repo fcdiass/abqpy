@@ -65,7 +65,7 @@ class ChannelProfile(Profile):
         t2: float,
         t3: float,
         o: float,
-    ):
+    ) -> "ChannelProfile":  # noqa
         """This method creates a ChannelProfile object.
 
         .. note::

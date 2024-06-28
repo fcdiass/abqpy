@@ -34,7 +34,7 @@ class HexagonalProfile(Profile):
     t: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, r: float, t: float):
+    def __init__(self, name: str, r: float, t: float) -> "HexagonalProfile":  # noqa
         """This method creates a HexagonalProfile object.
 
         .. note::

@@ -41,7 +41,7 @@ class LProfile(Profile):
     t2: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, a: float, b: float, t1: float, t2: float):
+    def __init__(self, name: str, a: float, b: float, t1: float, t2: float) -> "LProfile":  # noqa
         """This method creates a LProfile object.
 
         .. note::

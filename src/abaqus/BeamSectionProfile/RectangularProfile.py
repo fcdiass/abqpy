@@ -33,7 +33,7 @@ class RectangularProfile(Profile):
     b: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, a: float, b: float):
+    def __init__(self, name: str, a: float, b: float) -> "RectangularProfile":  # noqa
         """This method creates a RectangularProfile object.
 
         .. note::

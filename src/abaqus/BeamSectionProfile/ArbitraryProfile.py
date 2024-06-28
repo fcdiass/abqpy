@@ -40,7 +40,7 @@ class ArbitraryProfile(Profile):
     table: tuple
 
     @abaqus_method_doc
-    def __init__(self, name: str, table: tuple):
+    def __init__(self, name: str, table: tuple) -> "ArbitraryProfile":  # noqa
         """This method creates a ArbitraryProfile object.
 
         .. note::

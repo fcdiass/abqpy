@@ -39,7 +39,7 @@ class TrapezoidalProfile(Profile):
     d: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, a: float, b: float, c: float, d: float):
+    def __init__(self, name: str, a: float, b: float, c: float, d: float) -> "TrapezoidalProfile":  # noqa
         """This method creates a TrapezoidalProfile object.
 
         .. note::

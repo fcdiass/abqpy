@@ -56,7 +56,7 @@ class GeneralizedProfile(Profile):
         j: float,
         gammaO: float,
         gammaW: float,
-    ):
+    ) -> "GeneralizedProfile":  # noqa
         """This method creates a GeneralizedProfile object.
 
         .. note::

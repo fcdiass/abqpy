@@ -61,7 +61,7 @@ class HatProfile(Profile):
         t1: float,
         t2: float,
         t3: float,
-    ):
+    ) -> "HatProfile":  # noqa
         """This method creates a HatProfile object.
 
         .. note::

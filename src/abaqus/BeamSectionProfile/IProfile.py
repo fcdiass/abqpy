@@ -58,7 +58,7 @@ class IProfile(Profile):
         t1: float,
         t2: float,
         t3: float,
-    ):
+    ) -> "IProfile":  # noqa
         """This method creates an IProfile object.
 
         .. note::

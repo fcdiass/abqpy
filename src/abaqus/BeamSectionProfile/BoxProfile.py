@@ -63,7 +63,7 @@ class BoxProfile(Profile):
         t2: float = 0,
         t3: float = 0,
         t4: float = 0,
-    ):
+    ) -> "BoxProfile":  # noqa
         """This method creates a BoxProfile object.
 
         .. note::

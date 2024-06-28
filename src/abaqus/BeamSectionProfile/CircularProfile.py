@@ -30,7 +30,7 @@ class CircularProfile(Profile):
     r: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, r: float):
+    def __init__(self, name: str, r: float) -> "CircularProfile":  # noqa
         """This method creates a CircularProfile object.
 
         .. note::

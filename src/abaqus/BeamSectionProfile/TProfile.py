@@ -45,7 +45,7 @@ class TProfile(Profile):
     tw: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, b: float, h: float, l: float, tf: float, tw: float):
+    def __init__(self, name: str, b: float, h: float, l: float, tf: float, tw: float) -> "TProfile":  # noqa
         """This method creates a TProfile object.
 
         .. note::

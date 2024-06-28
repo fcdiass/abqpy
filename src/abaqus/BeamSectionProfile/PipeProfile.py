@@ -33,7 +33,7 @@ class PipeProfile(Profile):
     t: float
 
     @abaqus_method_doc
-    def __init__(self, name: str, r: float, t: float):
+    def __init__(self, name: str, r: float, t: float) -> "PipeProfile":  # noqa
         """This method creates a PipeProfile object.
 
         .. note::
