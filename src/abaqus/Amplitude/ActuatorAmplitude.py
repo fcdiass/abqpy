@@ -33,7 +33,7 @@ class ActuatorAmplitude(Amplitude):
     timeSpan: SymbolicConstant = STEP
 
     @abaqus_method_doc
-    def __init__(self, name: str, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
+    def __init__(self, name: str, timeSpan: Literal[C.STEP, C.TOTAL] = STEP) -> "ActuatorAmplitude":  # noqa
         """This method creates a ActuatorAmplitude object.
 
         .. note::

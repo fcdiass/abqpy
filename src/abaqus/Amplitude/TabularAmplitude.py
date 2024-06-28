@@ -57,7 +57,7 @@ class TabularAmplitude(Amplitude):
         data: Sequence[Sequence[float]],
         smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
-    ):
+    ) -> TabularAmplitude:  # noqa
         """This method creates a TabularAmplitude object.
 
         .. note::

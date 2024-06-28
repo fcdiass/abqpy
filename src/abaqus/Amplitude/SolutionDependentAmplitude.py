@@ -52,7 +52,7 @@ class SolutionDependentAmplitude(Amplitude):
         minimum: float = 0,
         maximum: float = 1000,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
-    ):
+    ) -> "SolutionDependentAmplitude":  # noqa
         """This method creates a SolutionDependentAmplitude object.
 
         .. note::

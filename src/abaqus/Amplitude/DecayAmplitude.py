@@ -53,7 +53,7 @@ class DecayAmplitude(Amplitude):
         start: float,
         decayTime: float,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
-    ):
+    ) -> "DecayAmplitude":  # noqa
         """This method creates a DecayAmplitude object.
 
         .. note::

@@ -99,7 +99,7 @@ class SpectrumAmplitude(Amplitude):
         criticalDamping: Boolean = OFF,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
         amplitude: str = "",
-    ):
+    ) -> "SpectrumAmplitude":  # noqa
         """This method creates a SpectrumAmplitude object.
 
         .. note::

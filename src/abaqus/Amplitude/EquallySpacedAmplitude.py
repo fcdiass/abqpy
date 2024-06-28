@@ -66,7 +66,7 @@ class EquallySpacedAmplitude(Amplitude):
         begin: float = 0,
         smooth: Union[Literal[C.SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
-    ):
+    ) -> "EquallySpacedAmplitude":  # noqa
         """This method creates an EquallySpacedAmplitude object.
 
         .. note::

@@ -71,7 +71,7 @@ class PsdDefinition(Amplitude):
         user: Boolean = OFF,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
         amplitude: str = "",
-    ):
+    ) -> "PsdDefinition":  # noqa
         """This method creates a PsdDefinition object.
 
         .. note::

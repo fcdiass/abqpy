@@ -37,7 +37,9 @@ class SmoothStepAmplitude(Amplitude):
     timeSpan: SymbolicConstant = STEP
 
     @abaqus_method_doc
-    def __init__(self, name: str, data: tuple, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
+    def __init__(
+        self, name: str, data: tuple, timeSpan: Literal[C.STEP, C.TOTAL] = STEP
+    ) -> "SmoothStepAmplitude":  # noqa
         """This method creates a SmoothStepAmplitude object.
 
         .. note::

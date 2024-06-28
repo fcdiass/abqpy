@@ -59,7 +59,7 @@ class ModulatedAmplitude(Amplitude):
         frequency1: float,
         frequency2: float,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
-    ):
+    ) -> "ModulatedAmplitude":  # noqa
         """This method creates a ModulatedAmplitude object.
 
         .. note::

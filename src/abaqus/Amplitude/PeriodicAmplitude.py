@@ -53,7 +53,7 @@ class PeriodicAmplitude(Amplitude):
         a_0: float,
         data: tuple,
         timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
-    ):
+    ) -> "PeriodicAmplitude":  # noqa
         """This method creates a PeriodicAmplitude object.
 
         .. note::
