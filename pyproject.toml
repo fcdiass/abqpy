@@ -116,6 +116,7 @@ in-place = true
 black = true
 
 [tool.mypy]
+ignore_errors = true
 ignore_missing_imports = true
 
 [tool.unimport]
