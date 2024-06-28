@@ -9,7 +9,7 @@ from . import __version__ as version
 T = TypeVar("T")
 
 
-def wrap_class_init(func: T, *, attr: str, key: str, index: int) -> T:
+def wrap(func: T, *, attr: str, key: str, index: int) -> T:
     """Wrap the class __init__ method to update the attribute with the object.
 
     For example, the following code::
