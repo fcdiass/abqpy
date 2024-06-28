@@ -39,7 +39,7 @@ def wrap_class_init(func: T, *, attr: str, key: str, index: int) -> T:
     Parameters
     ----------
     func : T
-        The function to wrap.
+        The function or class to wrap, if it is a class, ``func.__init__`` is used.
     attr : str
         The attribute to update. If the attribute is a dictionary, the key is used as the key in the dictionary.
         Otherwise, the attribute is replaced directly with the object.
@@ -54,7 +54,8 @@ def wrap_class_init(func: T, *, attr: str, key: str, index: int) -> T:
     """
 
     def wrapped(self, *args, **kwargs):
-        obj = func(*args, **kwargs)  # type: ignore
+        func_init = func.__init__ if isinstance(func, type) else func
+        obj = func_init(*args, **kwargs)  # type: ignore
         attribute_to_update = getattr(self, attr)
         if isinstance(attribute_to_update, MutableMapping):
             attribute_to_update[kwargs.get(key, args[index])] = obj
