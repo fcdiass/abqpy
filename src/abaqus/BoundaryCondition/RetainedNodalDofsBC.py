@@ -46,7 +46,7 @@ class RetainedNodalDofsBC(BoundaryCondition):
         ur1: Boolean = OFF,
         ur2: Boolean = OFF,
         ur3: Boolean = OFF,
-    ):
+    ) -> "RetainedNodalDofsBC":  # noqa
         """This method creates a RetainedNodalDofsBC object.
 
         .. note::

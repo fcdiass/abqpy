@@ -66,7 +66,7 @@ class ConcentrationBC(BoundaryCondition):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
-    ):
+    ) -> "ConcentrationBC":  # noqa
         """This method creates a ConcentrationBC object.
 
         .. note::

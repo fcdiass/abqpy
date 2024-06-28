@@ -166,7 +166,7 @@ class EulerianMotionBC(BoundaryCondition):
         vmaxFactor: float = 1,
         volThreshold: float = 0,
         bufferSize: float = 2,
-    ):
+    ) -> "EulerianMotionBC":  # noqa
         """This method creates an EulerianMotionBC object.
 
         .. note::

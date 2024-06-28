@@ -66,7 +66,7 @@ class MaterialFlowBC(BoundaryCondition):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
-    ):
+    ) -> "MaterialFlowBC":  # noqa
         """This method creates a MaterialFlowBC object.
 
         .. note::

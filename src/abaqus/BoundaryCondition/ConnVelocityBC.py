@@ -71,7 +71,7 @@ class ConnVelocityBC(BoundaryCondition):
         vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-    ):
+    ) -> "ConnVelocityBC":  # noqa
         """This method creates a ConnVelocityBC object on a wire region. Alternatively, the boundary condition
         may also be applied to a wire set referenced from an assembled fastener template model.
 

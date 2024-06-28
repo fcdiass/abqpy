@@ -87,7 +87,7 @@ class DisplacementBC(BoundaryCondition):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-    ):
+    ) -> "DisplacementBC":  # noqa
         """This method creates a DisplacementBC object.
 
         .. note::

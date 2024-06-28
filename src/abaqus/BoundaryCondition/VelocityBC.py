@@ -64,7 +64,7 @@ class VelocityBC(BoundaryCondition):
         amplitude: str = UNSET,
         localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
-    ):
+    ) -> "VelocityBC":  # noqa
         """This method creates a VelocityBC object.
 
         .. note::

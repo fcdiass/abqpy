@@ -64,7 +64,7 @@ class EulerianBC(BoundaryCondition):
         definition: Literal[C.BOTH, C.INFLOW, C.OUTFLOW] = INFLOW,
         inflowType: Literal[C.VOID, C.FREE, C.NONE] = FREE,
         outflowType: Literal[C.FREE, C.ZERO_PRESSURE, C.EQUILIBRIUM, C.NON_REFLECTING] = ZERO_PRESSURE,
-    ):
+    ) -> "EulerianBC":  # noqa
         """This method creates a EulerianBC object.
 
         .. note::

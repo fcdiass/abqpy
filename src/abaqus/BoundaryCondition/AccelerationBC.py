@@ -64,7 +64,7 @@ class AccelerationBC(BoundaryCondition):
         amplitude: str = UNSET,
         localCsys: str | None = None,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
-    ):
+    ) -> "AccelerationBC":  # noqa
         """This method creates an AccelerationBC object.
 
         .. note::

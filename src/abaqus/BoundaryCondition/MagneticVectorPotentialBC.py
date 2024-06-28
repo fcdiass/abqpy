@@ -53,7 +53,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
         localCsys: str | None = None,
-    ):
+    ) -> "MagneticVectorPotentialBC":  # noqa
         """This method creates a MagneticVectorPotentialBC object.
 
         .. note::

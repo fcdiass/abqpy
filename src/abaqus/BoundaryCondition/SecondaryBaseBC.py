@@ -43,7 +43,7 @@ class SecondaryBaseBC(BoundaryCondition):
     localCsys: str | None = None
 
     @abaqus_method_doc
-    def __init__(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple):
+    def __init__(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple) -> "SecondaryBaseBC":  # noqa
         """This method creates a SecondaryBaseBC object.
 
         .. note::

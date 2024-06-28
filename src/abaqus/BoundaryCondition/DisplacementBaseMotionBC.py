@@ -68,7 +68,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
-    ):
+    ) -> "DisplacementBaseMotionBC":  # noqa
         """This method creates a DisplacementBaseMotionBC object.
 
         .. note::

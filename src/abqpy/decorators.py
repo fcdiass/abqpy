@@ -66,6 +66,21 @@ def wrap(func: T, *, attr: str, key: str, index: int) -> T:
     return abaqus_method_doc(update_wrapper(wrapped, func))  # type: ignore
 
 
+def wrap_bc(func: T, *, attr: str, key: str, index: int, stepKey: str, stepIndex: int, stateType: type) -> T:
+    def wrapped(self, *args, **kwargs):
+        func_init = func.__init__ if isinstance(func, type) else func
+        obj = func_init(*args, **kwargs)  # type: ignore
+        attribute_to_update = getattr(self, attr)
+
+        name = kwargs.get(key, args[index])
+        stepName = kwargs.get(stepKey, args[stepIndex])
+        attribute_to_update[name] = obj
+        self.steps[stepName].boundaryConditionStates[name] = stateType()
+        return obj
+
+    return abaqus_method_doc(update_wrapper(wrapped, func))  # type: ignore
+
+
 def class_or_module_link(
     type: str,
     class_or_module_name: str,

@@ -71,7 +71,7 @@ class ConnAccelerationBC(BoundaryCondition):
         ar3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-    ):
+    ) -> "ConnAccelerationBC":  # noqa
         """This method creates an ConnAccelerationBC object on a wire region. Alternatively, the boundary
         condition may also be applied to a wire set referenced from an assembled fastener template model.
 

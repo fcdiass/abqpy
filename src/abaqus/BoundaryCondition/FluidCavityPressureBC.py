@@ -57,7 +57,7 @@ class FluidCavityPressureBC(BoundaryCondition):
         magnitude: float = 0,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
-    ):
+    ) -> "FluidCavityPressureBC":  # noqa
         """This method creates a FluidCavityPressureBC object.
 
         .. note::

@@ -66,7 +66,7 @@ class AcousticPressureBC(BoundaryCondition):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
-    ):
+    ) -> "AcousticPressureBC":  # noqa
         """This method creates a AcousticPressureBC object.
 
         .. note::

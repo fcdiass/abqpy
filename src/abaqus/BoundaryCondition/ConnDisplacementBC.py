@@ -92,7 +92,7 @@ class ConnDisplacementBC(BoundaryCondition):
         buckleCase: Literal[
             C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
         ] = NOT_APPLICABLE,
-    ):
+    ) -> "ConnDisplacementBC":  # noqa
         """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the boundary
         condition may also be applied to a wire set referenced from an assembled fastener template model.
 

@@ -70,7 +70,7 @@ class SubmodelBC(BoundaryCondition):
         globalIncrement: int = 0,
         centerZoneSize: float | None = None,
         intersectionOnly: Boolean = OFF,
-    ):
+    ) -> "SubmodelBC":  # noqa
         """This method creates a SubmodelBC object.
 
         .. note::

@@ -68,7 +68,7 @@ class AccelerationBaseMotionBC(BoundaryCondition):
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
-    ):
+    ) -> "AccelerationBaseMotionBC":  # noqa
         """This method creates a AccelerationBaseMotionBC object.
 
         .. note::

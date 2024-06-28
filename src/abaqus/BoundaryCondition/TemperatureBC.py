@@ -67,7 +67,7 @@ class TemperatureBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         fixed: Boolean = OFF,
-    ):
+    ) -> "TemperatureBC":  # noqa
         """This method creates a TemperatureBC object.
 
         .. note::

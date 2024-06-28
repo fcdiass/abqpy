@@ -66,7 +66,7 @@ class ElectricPotentialBC(BoundaryCondition):
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
-    ):
+    ) -> "ElectricPotentialBC":  # noqa
         """This method creates an ElectricPotentialBC object.
 
         .. note::
