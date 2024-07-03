@@ -559,7 +559,7 @@
 <span class="k">try</span><span class="p">:</span>
     <a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="n">myOdb</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.OdbCommands.openOdb" title="abaqus.Odb.OdbCommands.openOdb"><span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span></a><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">"viewer_tutorial.odb"</span><span class="p">)</span>
 
-<span class="k">except</span> <span class="n">AbaqusException</span> <span class="k">as</span> <span class="n">value</span><span class="p">:</span>
+<span class="k">except</span> <a class="sphinx-codeautolink-a" href="../../reference/kernel/utility.html#abaqus.UtilityAndView.AbaqusException.AbaqusException" title="abaqus.UtilityAndView.AbaqusException.AbaqusException"><span class="n">AbaqusException</span></a> <span class="k">as</span> <span class="n">value</span><span class="p">:</span>
     <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Error:"</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 
 <span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><a class="sphinx-codeautolink-a" href="../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><span class="n">myOdb</span></a><span class="p">)</span>
