@@ -34,7 +34,7 @@ Module Contents
 
    Bases: :py:obj:`pydantic.BaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.7/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -110,7 +110,7 @@ Module Contents
 
    .. py:method:: model_dump(**kwargs) -> dict[str, Any]
 
-      Usage docs: https://docs.pydantic.dev/2.7/concepts/serialization/#modelmodel_dump
+      Usage docs: https://docs.pydantic.dev/2.8/concepts/serialization/#modelmodel_dump
 
       Generate a dictionary representation of the model, optionally specifying which fields to include or exclude.
 
@@ -137,7 +137,7 @@ Module Contents
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.7/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -276,7 +276,7 @@ Module Contents
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.7/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -365,7 +365,7 @@ Module Contents
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.7/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
 
    A base class for creating Pydantic models.
 
@@ -470,7 +470,7 @@ Module Contents
 
    Bases: :py:obj:`AbaqusCAEConfig`, :py:obj:`AbaqusPythonConfig`
 
-   Usage docs: https://docs.pydantic.dev/2.7/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
 
    A base class for creating Pydantic models.
 
