@@ -533,19 +533,20 @@
 </div>
 <p>You can assign the return value to a variable:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 <span class="go">10.2420701033</span>
 </code></pre></div>
 </div>
 <p>One of the methods provided by Abaqus uses as many as 50 arguments. Some of the arguments are required by the method; others are optional, and Abaqus provides an initial or default value. Fortunately, you can call a function or a method without providing every optional argument if you use Python’s keyword arguments. A keyword specifies the argument that you are providing. Keyword arguments also make your scripts more readable. For example, the following defines a function called calculateCylinderVolume:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="n">height</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
+<span class="gp">...</span>
 </code></pre></div>
 </div>
 <p>You can call the function with the following line:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">27.5</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">27.5</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Here the arguments are called positional arguments because you are relying on their position in the function call to determine the variable to which they are assigned in the function—radius followed by height.</p>
@@ -559,9 +560,10 @@
 </div>
 <p>You can define default values for an argument in a function definition. For example, the following sets the default value of radius to 0.5 and the default value of height to 1.0:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">height</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
+<span class="gp">...</span>
 </code></pre></div>
 </div>
 <p>You can now call the function without providing all the arguments. The function assigns the default value to any missing arguments.</p>
@@ -569,18 +571,17 @@
 </code></pre></div>
 </div>
 <p>It is good programming practice to use a documentation string that indicates the purpose of a function and the arguments expected. A documentation string appears at the top of a function and is delimited by triple quotes “””. You can use the __doc__ method to obtain the documentation string from a function while running the Python interpreter. For example,</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
 <span class="gp">... </span><span class="w">    </span><span class="sd">"""</span>
 <span class="gp">... </span><span class="sd">    Calculates the volume of a cylinder.</span>
-<span class="gp">...</span>
 <span class="gp">... </span><span class="sd">    Takes two optional arguments, radius (default=0.5)</span>
 <span class="gp">... </span><span class="sd">    and height (default=1.0).</span>
 <span class="gp">... </span><span class="sd">    """</span>
-<span class="gp">... </span>    <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
+<span class="gp">... </span>    <span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">... </span>    <span class="n">volume</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">volume</span>
 <span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="p">(</span><span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
 
 <span class="go">Calculates the volume of a cylinder.</span>
 
@@ -651,29 +652,29 @@
 </div>
 <h2 id="using-dictionaries"><span id="id2"></span>Using dictionaries<a class="headerlink" href="#using-dictionaries" title="Link to this heading">¶</a></h2>
 <p>Dictionaries are a powerful tool in Python. A dictionary maps a variable to a set of data, much like a real dictionary maps a word to its definition, its pronunciation, and its synonyms. Dictionaries are similar to lists in that they are not homogeneous and can contain objects of any type. To access an object in a list, you provide the integer index that specifies the position of the object in the list. For example,</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="go">2</span>
 </code></pre></div>
 </div>
 <p>In contrast, you access an object in a dictionary through its key, which can be a string, an integer, or any type of immutable Python object. There is no implicit order to the keys in a dictionary. In most cases you will assign a string to the dictionary key. The key then becomes a more intuitive way to access the elements in a dictionary. You use square brackets and the dictionary key to access a particular object. For example,</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1">#Create an empty dictionary</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'size'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'material'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Steel'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Red'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'number'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">667</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># Create an empty dictionary</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s2">"size"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s2">"material"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Steel"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s2">"color"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Red"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s2">"number"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">667</span>
 </code></pre></div>
 </div>
 <p>You can add dictionary keys at any time.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'weight'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">376.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s1">'cost'</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.34</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s2">"weight"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">376.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="p">[</span><span class="s2">"cost"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.34</span>
 </code></pre></div>
 </div>
 <p>You use the key to access an item in a dictionary.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">costOverWeight</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'cost'</span><span class="p">]</span> <span class="o">/</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'weight'</span><span class="p">]</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">costOverWeight</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s2">"cost"</span><span class="p">]</span> <span class="o">/</span> <span class="n">myPart</span><span class="p">[</span><span class="s2">"weight"</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">costOverWeight</span>
 <span class="go">0.0275</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">description</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span> <span class="o">+</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'material'</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">description</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s2">"color"</span><span class="p">]</span> <span class="o">+</span> <span class="n">myPart</span><span class="p">[</span><span class="s2">"material"</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">description</span>
 <span class="go">'RedSteel'</span>
 </code></pre></div>
@@ -701,7 +702,7 @@
 </code></pre></div>
 </div>
 <p>You use the <code class="docutils literal notranslate"><span class="pre">has_key()</span></code> method to see if a key exists. A return value of 1 indicates the key exists in the dictionary. A return value of 0 indicates the key does not exist.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">'color'</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s2">"color"</span><span class="p">)</span>
 <span class="go">1</span>
 </code></pre></div>
 </div>
@@ -710,14 +711,14 @@
 </code></pre></div>
 </div>
 <p>You can also use del to delete an item from a dictionary.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">'color'</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">'color'</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">del</span> <span class="n">myPart</span><span class="p">[</span><span class="s2">"color"</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s2">"color"</span><span class="p">)</span>
 <span class="go">0</span>
 </code></pre></div>
 </div>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">values()</span></code>, or <code class="docutils literal notranslate"><span class="pre">items()</span></code> methods to loop through a dictionary. In the following example, <code class="docutils literal notranslate"><span class="pre">items()</span></code> returns two values; the first is assigned to property, and the second is assigned to setting.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span> <span class="ow">in</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#property" title="property"><span class="nb">property</span></a><span class="p">,</span> <span class="n">setting</span><span class="p">)</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#property" title="property"><span class="nb">property</span></a><span class="p">,</span> <span class="n">setting</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">size 3.0</span>
 <span class="go">weight 376.0</span>
@@ -728,13 +729,13 @@
 </div>
 <h2 id="reading-and-writing-from-files">Reading and writing from files<a class="headerlink" href="#reading-and-writing-from-files" title="Link to this heading">¶</a></h2>
 <p>Many of the file commands are built-in Python commands. You do not have to import a module to use file commands. You use the open() function to create a file.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myInputFile</span>  <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'crash_test/fender.txt'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'peak_deflection.txt'</span><span class="p">,</span><span class="s1">'w+'</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myInputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"crash_test/fender.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"peak_deflection.txt"</span><span class="p">,</span> <span class="s2">"w+"</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>The first line opens an existing file in the crash_test directory called fender.txt. The file is opened in read-only mode; myInputFile is a variable that refers to a file object. The second line creates and opens a new file object in the local directory called peak_deflection.txt. This file is opened in read and write mode.</p>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">__methods__</span></code> technique that we saw earlier to see the methods of a file object.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'peak_deflection.txt'</span><span class="p">,</span><span class="s1">'w'</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"peak_deflection.txt"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">myOutputFile</span><span class="o">.</span><span class="n">__methods__</span>
 <span class="go">['close', 'fileno', 'flush', 'isatty', 'read',</span>
 <span class="go">'readinto', 'readline', 'readlines', 'seek', 'tell',</span>
@@ -745,11 +746,11 @@
 <p>The following example reads each line of a text file and changes the line to uppercase characters:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="go"># Read-only is the default access mode</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">inputFile</span>  <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">inputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"foam.txt"</span><span class="p">)</span>
 
 <span class="go"># You must declare write access</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'upper.txt'</span><span class="p">,</span><span class="s1">'w'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"upper.txt"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lines</span> <span class="o">=</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="n">newLine</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
@@ -763,11 +764,11 @@
 <h2 id="error-handling"><span id="id3"></span>Error handling<a class="headerlink" href="#error-handling" title="Link to this heading">¶</a></h2>
 <p>When a script encounters unusual circumstances, Python allows you to modify the flow of control through the script and to take the necessary action. The action of signaling a problem during execution is called raising or throwing an exception. Recognizing the problem is called catching an exception. Taking appropriate action is called exception handling.</p>
 <p>Python provides exception handling through the try and except commands. For example, the following statement attempts to open an existing file for reading:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"foam.txt"</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>If the file does not exist, the statement fails, and Python displays the following error message:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"foam.txt"</span><span class="p">)</span>
 <span class="go">Traceback (innermost last):</span>
 <span class="go">File "&lt;stdin&gt;", line 1, in ?</span>
 <span class="go">IOError: (2, 'No such file or directory')</span>
@@ -775,9 +776,9 @@
 </div>
 <p>If you use exception handling, you can catch the error, display a helpful message, and take the appropriate action. For example, a revised version of the code attempts to open the same file within a try statement. If an IOError error is encountered, the except statement catches the IOError exception and assigns the exception’s value to the variable error.</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s1">'foam.txt'</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">outputFile</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#open" title="open"><span class="nb">open</span></a><span class="p">(</span><span class="s2">"foam.txt"</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/exceptions.html#IOError" title="IOError"><span class="ne">IOError</span></a> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
-<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="s1">'Exception trapped: '</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+<span class="gp">... </span>    <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="s2">"Exception trapped: "</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">Exception trapped:  (2, 'No such file or directory')</span>
 </code></pre></div>
@@ -799,7 +800,7 @@
 <p>Exception handling is discussed in more detail in Error handling in the <a class="reference internal" href="../../../reference/index.html"><span class="doc">Abaqus Class References</span></a>.</p>
 <h2 id="functions-and-modules"><span id="id4"></span>Functions and modules<a class="headerlink" href="#functions-and-modules" title="Link to this heading">¶</a></h2>
 <p>When you start Python from a local window or from Abaqus/CAE, the Python interpreter is aware of a limited set of built-in functions. For example, try entering the following at the Python prompt:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myName</span> <span class="o">=</span> <span class="s1">'Einstein'</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">myName</span> <span class="o">=</span> <span class="s2">"Einstein"</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#len" title="len"><span class="nb">len</span></a><span class="p">(</span><span class="n">myName</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -815,7 +816,7 @@
 </div>
 <p>You must first import the module to make its functions, names, and functionality available to the Python interpreter. Try the following:</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a> <span class="kn">import</span> <span class="o">*</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a><span class="o">/</span><span class="mf">4.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.pi" title="math.pi"><span class="n">pi</span></a> <span class="o">/</span> <span class="mf">4.0</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sin" title="math.sin"><span class="n">sin</span></a><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="go">0.707106781187</span>
 </code></pre></div>
@@ -829,7 +830,7 @@
 <p>To see a list of all the functions that come with the math module, look at the Miscellaneous Services section of the Python Library Reference. You can download public-domain modules, and you can create your own modules.</p>
 <p>Python provides a second approach to importing modules. For example,</p>
 <div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#module-math" title="math"><span class="nn">math</span></a>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="p">(</span><span class="mf">7.0</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mf">22.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">7.0</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/math.html#math.sin" title="math.sin"><span class="n">math</span><span class="o">.</span><span class="n">sin</span></a><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="go">0.707330278085</span>
 </code></pre></div>
