@@ -419,7 +419,7 @@
 </code></pre></div>
 </div>
 <p>The following statement changes the frame rate to 50. You should confirm that the data type you specify matches the type of the existing value.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">sessionOptions</span><span class="p">[</span><span class="s1">'session.animationOptions'</span><span class="p">][</span><span class="s1">'frameRate'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">sessionOptions</span><span class="p">[</span><span class="s2">"session.animationOptions"</span><span class="p">][</span><span class="s2">"frameRate"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
 </code></pre></div>
 </div>
 <p>You can save the options you change to the original file by issuing the following command:</p>
@@ -446,12 +446,11 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">caePrefsAccess</span> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList"><span class="n">printValuesList</span></a>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">guiPrefsFileName</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName"><span class="n">getGuiPrefsFileName</span></a><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dispNames</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences"><span class="n">getDisplayNamesInGuiPreferences</span></a><span class="p">(</span><span class="n">guiPrefsFileName</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a> <span class="p">(</span><span class="n">dispNames</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="https://docs.python.org/3/library/functions.html#print" title="print"><span class="nb">print</span></a><span class="p">(</span><span class="n">dispNames</span><span class="p">)</span>
 <span class="go">['preludesim']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">displayName</span> <span class="o">=</span> <span class="n">dispNames</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs"><span class="n">guiPrefs</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences"><span class="n">openGuiPreferences</span></a><span class="p">(</span><span class="n">displayName</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList" title="abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList"><span class="n">printValuesList</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="../../reference/kernel/cae_display_preferences.html#abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.CaeGuiPrefs" title="abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs"><span class="n">guiPrefs</span></a><span class="p">)</span>
-<span class="gp">...</span>
 <span class="go">guiPreferences['Abaqus/CAE']['Geometry']['AFXFontSelectorDialog text']:\</span>
 <span class="go">    [type:str] '617,298,281,350'</span>
 <span class="go">guiPreferences['Abaqus/CAE']['Geometry']['AFXMainWindow']:[type:str] \</span>
@@ -469,7 +468,7 @@
 </li>
 </ul>
 <p>You can change the geometry of the Abaqus/CAE main window by issuing a command like the following:</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">guiPrefs</span><span class="p">[</span><span class="s1">'Abaqus/CAE'</span><span class="p">][</span><span class="s1">'Geometry'</span><span class="p">][</span><span class="s1">'AFXMainWindow'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'193,67,800,600'</span>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">guiPrefs</span><span class="p">[</span><span class="s2">"Abaqus/CAE"</span><span class="p">][</span><span class="s2">"Geometry"</span><span class="p">][</span><span class="s2">"AFXMainWindow"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"193,67,800,600"</span>
 </code></pre></div>
 </div>
 <p>You can save the GUI preferences you change to the original file by issuing the following command:</p>
