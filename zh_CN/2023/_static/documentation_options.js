@@ -1,7 +1,6 @@
-var DOCUMENTATION_OPTIONS = {
-    URL_ROOT: document.getElementById("documentation_options").getAttribute('data-url_root'),
-    VERSION: '2023.5.8.dev4+g64aa7531e',
-    LANGUAGE: 'zh-CN/html',
+const DOCUMENTATION_OPTIONS = {
+    VERSION: '2023.7.6',
+    LANGUAGE: 'zh-CN',
     COLLAPSE_INDEX: false,
     BUILDER: 'html',
     FILE_SUFFIX: '.html',
