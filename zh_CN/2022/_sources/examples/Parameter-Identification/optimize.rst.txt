@@ -110,6 +110,10 @@ The model script of this example can be found :doc:`here <compression>`.
 
       :download:`Download Python source code: optimize.py <optimize.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: optimize.zip <optimize.zip>`
+
 
 .. only:: html
 
