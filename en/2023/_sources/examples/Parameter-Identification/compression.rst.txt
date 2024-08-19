@@ -149,6 +149,10 @@ The optimize script of this example can be found :doc:`here <optimize>`.
 
       :download:`Download Python source code: compression.py <compression.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: compression.zip <compression.zip>`
+
 
 .. only:: html
 
