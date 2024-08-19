@@ -405,6 +405,10 @@ The following shows the contents of the script skewExample.py. The parametric st
 
       :download:`Download Python source code: skewExample.py <skewExample.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: skewExample.zip <skewExample.zip>`
+
 
 .. only:: html
 
