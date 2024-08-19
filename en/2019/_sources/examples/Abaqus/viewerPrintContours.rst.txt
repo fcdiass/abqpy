@@ -135,6 +135,10 @@ The script does the following:
 
       :download:`Download Python source code: viewerPrintContours.py <viewerPrintContours.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: viewerPrintContours.zip <viewerPrintContours.zip>`
+
 
 .. only:: html
 
