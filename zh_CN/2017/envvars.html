@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="" rel="icon"/>
-<title>环境变量 - abqpy 2017.7.5 文档</title>
+<title>环境变量 - abqpy 2017.7.6 文档</title>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" rel="stylesheet" type="text/css">
+<link href="_static/sphinx_immaterial_theme.3625f807144f53acf.min.css?v=fbfc4466" rel="stylesheet" type="text/css">
 <link href="_static/togglebutton.css?v=13237357" rel="stylesheet" type="text/css"/>
 <link href="_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
 <link href="_static/sphinx-codeautolink.css?v=125d5c1c" rel="stylesheet" type="text/css"/>
@@ -22,12 +22,12 @@
 <link href="_static/css/tooltipster-sideTip-borderless.min.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/micromodal.css" rel="stylesheet" type="text/css"/>
 <link href="_static/graphviz.css?v=fd3f3429" rel="stylesheet" type="text/css"/>
-<link href="_static/sg_gallery.css?v=61a4c737" rel="stylesheet" type="text/css"/>
+<link href="_static/sg_gallery.css?v=d2d258e8" rel="stylesheet" type="text/css"/>
 <link href="_static/sg_gallery-binder.css?v=f4aeca0c" rel="stylesheet" type="text/css"/>
 <link href="_static/sg_gallery-dataframe.css?v=2082cf3c" rel="stylesheet" type="text/css"/>
 <link href="_static/sg_gallery-rendered-html.css?v=1277b6f3" rel="stylesheet" type="text/css"/>
 <link href="_static/autoclasstoc.css?v=08871587" rel="stylesheet" type="text/css"/>
-<link href="_static/sphinx-design.min.css?v=87e54e7c" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </link></head>
 <body data-md-color-accent="" data-md-color-primary="" data-md-color-scheme="default" dir="ltr">
@@ -46,7 +46,7 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="页眉" class="md-header__inner md-grid">
-<a aria-label="abqpy 2017.7.5 文档" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="abqpy 2017.7.5 文档">
+<a aria-label="abqpy 2017.7.6 文档" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="abqpy 2017.7.6 文档">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -56,7 +56,7 @@
 <div class="md-header__ellipsis">
 <div class="md-header__topic">
 <span class="md-ellipsis">
-            abqpy 2017.7.5 文档
+            abqpy 2017.7.6 文档
           </span>
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
@@ -178,10 +178,10 @@
 <div class="md-sidebar__inner">
 <nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="abqpy 2017.7.5 文档" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="abqpy 2017.7.5 文档">
+<a aria-label="abqpy 2017.7.6 文档" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="abqpy 2017.7.6 文档">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
-    abqpy 2017.7.5 文档
+    abqpy 2017.7.6 文档
   </label>
 <div class="md-nav__source">
 <a class="md-source" data-md-component="source" href="https://github.com/haiiliin/abqpy/" title="前往仓库">
@@ -527,17 +527,17 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
 <h1 id="environment-variables">环境变量<a class="headerlink" href="#environment-variables" title="Link to this heading">¶</a></h1>
-<p>The following environment variables can be used to configure the package.</p>
+<p>以下环境变量可以用于配置该项目。</p>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_BAT_PATH">
 <span class="sig-name descname"><span class="pre">ABAQUS_BAT_PATH</span></span><a class="headerlink" href="#envvar-ABAQUS_BAT_PATH" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
+<dd><p>** 类型：字符串 **</p>
 <p><code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令行批处理文件的文件路径 (<code class="docutils literal notranslate"><span class="pre">.bat</span></code>)。 仅在 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 不是默认的 Abaqus 命令行可执行文件时设置此环境变量。 此变量被用于在安装了 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 的 Python 解释器环境中运行 Abaqus 命令行程序。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_COMMAND_OPTIONS">
 <span class="sig-name descname"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string of a Python dictionary</strong></p>
+<dd><p>** 类型：表示一个 Python 字典的字符串 **</p>
 <p>在 Python 环境中使用 <code class="docutils literal notranslate"><span class="pre">abqpy</span></code> 默认将运行以下两个命令之一：</p>
 <ol class="arabic">
 <li><p>当存在 <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">abaqus</span></code> 或 <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">...</span></code> 语句时：</p>
@@ -551,12 +551,7 @@
 </div>
 </li>
 </ol>
-<p>However, there are other execution procedures that can be run with the <code class="docutils literal notranslate"><span class="pre">abaqus</span></code>
-command and also another options that could be passed to these commands. To define
-these procedures and options you can create a new system environment variable
-named <code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code>, and set a <strong>dictionary</strong> to this variable with the
-options you want to use. The values of the dictionary keys would be booleans or
-strings, e.g.: <code class="docutils literal notranslate"><span class="pre">{'gui':</span> <span class="pre">True,</span> <span class="pre">'database':</span> <span class="pre">'file.odb'}</span></code></p>
+<p>但是，还有其它可以传递给 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 命令的选项。要定义这些选项，您可以创建一个名为 <code class="docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code> 的新系统环境变量，并将您要使用的选项为该变量设置一个 ** 字典 **。 字典的值可以是布尔值或字符串，例如：<code class="docutils literal notranslate"><span class="pre">{'gui':</span> <span class="pre">True,</span> <span class="pre">'database':</span> <span class="pre">'file.odb'}</span></code>。</p>
 <p>可用选项包括：</p>
 <ol class="arabic">
 <li><p>使用 <code class="docutils literal notranslate"><span class="pre">abaqus</span> <span class="pre">cae</span></code> 命令 (导入 <code class="docutils literal notranslate"><span class="pre">abaqus</span></code> 模块)：</p>
@@ -589,95 +584,92 @@ strings, e.g.: <code class="docutils literal notranslate"><span class="pre">{'gu
 <p>使用此方案的一个优点是在代码内的运行时更改选项。</p>
 <div class="note admonition">
 <p class="admonition-title">备注</p>
-<p>The environment variable <span class="target" id="index-0"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> must be a valid string that can be parsed to a Python dictionary,
-which means that you must use <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> for boolean options. However, in the following individual environment
-variables, you can use <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">on</span></code>, <code class="docutils literal notranslate"><span class="pre">yes</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code> (or capitalized ones since they are not case sensitive) to set the
-boolean option to <code class="docutils literal notranslate"><span class="pre">True</span></code> and any other values to set it to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>环境变量 <span class="target" id="index-30"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 必须是可以解析为 Python 字典的有效字符串，这意味着必须使用 <code class="docutils literal notranslate"><span class="pre">True</span></code> 或 <code class="docutils literal notranslate"><span class="pre">False</span></code> 来设置布尔选项。不过，在以下单独的环境变量中，可以使用 <code class="docutils literal notranslate"><span class="pre">true</span></code>、<code class="docutils literal notranslate"><span class="pre">on</span></code>、<code class="docutils literal notranslate"><span class="pre">yes</span></code> 或 <code class="docutils literal notranslate"><span class="pre">1</span></code>（或大写字母，不区分大小写）将布尔选项设置为 <code class="docutils literal notranslate"><span class="pre">True</span></code>，否则将其设置为 <code class="docutils literal notranslate"><span class="pre">False</span></code>。</p>
 </div>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_DATABASE">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_DATABASE</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_DATABASE" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-1"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">database</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-31"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">database</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_REPLAY">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_REPLAY</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_REPLAY" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-2"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">replay</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-32"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">reply</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_RECOVER">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_RECOVER</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_RECOVER" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-3"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">recover</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-33"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">recover</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_STARTUP">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_STARTUP</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_STARTUP" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-4"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">startup</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-34"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">startup</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_GUI">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
-<p>A shortcut to the <span class="target" id="index-5"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">gui</span></code> option but has higher priority.</p>
+<dd><p>** 类型：布尔值 {true、 false、 on、 off、 yes、 no、 1、 0}**</p>
+<p>环境变量 <span class="target" id="index-35"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">gui</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_ENVSTARTUP">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_ENVSTARTUP</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_ENVSTARTUP" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
-<p>A shortcut to the <span class="target" id="index-6"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">envstartup</span></code> option but has higher priority.</p>
+<dd><p>** 类型：布尔值 {true、 false、 on、 off、 yes、 no、 1、 0}**</p>
+<p>环境变量 <span class="target" id="index-36"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">envstartup</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_SAVED_OPTIONS">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_SAVED_OPTIONS</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_SAVED_OPTIONS" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
-<p>A shortcut to the <span class="target" id="index-7"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">savedOptions</span></code> option but has higher priority.</p>
+<dd><p>** 类型：布尔值 {true、 false、 on、 off、 yes、 no、 1、 0}**</p>
+<p>环境变量 <span class="target" id="index-37"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">savedOptions</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_SAVED_GUI_PREFS">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_SAVED_GUI_PREFS</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_SAVED_GUI_PREFS" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
-<p>A shortcut to the <span class="target" id="index-8"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">savedGuiPrefs</span></code> option but has higher priority.</p>
+<dd><p>** 类型：布尔值 {true、 false、 on、 off、 yes、 no、 1、 0}**</p>
+<p>环境变量 <span class="target" id="index-38"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">savedGuiPrefs</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_STARTUP_DIALOG">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_STARTUP_DIALOG</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_STARTUP_DIALOG" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
-<p>A shortcut to the <span class="target" id="index-9"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">startupDialog</span></code> option but has higher priority.</p>
+<dd><p>** 类型：布尔值 {true、 false、 on、 off、 yes、 no、 1、 0}**</p>
+<p>环境变量 <span class="target" id="index-39"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">startupDialog</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_CUSTOM">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_CUSTOM</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_CUSTOM" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-10"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">custom</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-40"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">custom</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_GUI_TESTER">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI_TESTER</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI_TESTER" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-11"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">guiTester</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-41"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">guiTester</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_CAE_GUI_RECORD">
 <span class="sig-name descname"><span class="pre">ABAQUS_CAE_GUI_RECORD</span></span><a class="headerlink" href="#envvar-ABAQUS_CAE_GUI_RECORD" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: bool {true, false, on, off, yes, no, 1, 0}</strong></p>
-<p>A shortcut to the <span class="target" id="index-12"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">guiRecord</span></code> option but has higher priority.</p>
+<dd><p>** 类型：布尔值 {true、 false、 on、 off、 yes、 no、 1、 0}**</p>
+<p>环境变量 <span class="target" id="index-42"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">guiRecord</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_PYTHON_SIM">
 <span class="sig-name descname"><span class="pre">ABAQUS_PYTHON_SIM</span></span><a class="headerlink" href="#envvar-ABAQUS_PYTHON_SIM" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-13"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">sim</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-43"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">sim</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <dl class="std envvar objdesc">
 <dt class="sig sig-object highlight std" id="envvar-ABAQUS_PYTHON_LOG">
 <span class="sig-name descname"><span class="pre">ABAQUS_PYTHON_LOG</span></span><a class="headerlink" href="#envvar-ABAQUS_PYTHON_LOG" title="Link to this definition">¶</a></dt>
-<dd><p><strong>Type: string</strong></p>
-<p>A shortcut to the <span class="target" id="index-14"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> environment variable to set the <code class="docutils literal notranslate"><span class="pre">log</span></code> option but has higher priority.</p>
+<dd><p>** 类型：字符串 **</p>
+<p>环境变量 <span class="target" id="index-44"></span><a class="reference internal" href="#envvar-ABAQUS_COMMAND_OPTIONS" title="ABAQUS_COMMAND_OPTIONS (环境变量) — Type: string of a Python dictionary"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ABAQUS_COMMAND_OPTIONS</span></code></a> 的快捷方式，用于设置 <code class="docutils literal notranslate"><span class="pre">log</span></code> 选项，但优先级更高。</p>
 </dd></dl>
 <h2 id="example">示例<a class="headerlink" href="#example" title="Link to this heading">¶</a></h2>
 <p>下面的代码片段在运行时更改了调用 abaqus cae 命令的默认选项。</p>
@@ -744,7 +736,7 @@ boolean option to <code class="docutils literal notranslate"><span class="pre">T
   
     Created using
     <a href="https://www.sphinx-doc.org/" rel="noopener" target="_blank">Sphinx</a>
-    7.3.7.
+    8.0.2.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" rel="noopener" target="_blank">Sphinx-Immaterial</a>
 </div>
