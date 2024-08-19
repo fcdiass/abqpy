@@ -116,6 +116,10 @@ The script does the following:
 
       :download:`Download Python source code: viewerOpenOdbAndContour.py <viewerOpenOdbAndContour.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: viewerOpenOdbAndContour.zip <viewerOpenOdbAndContour.zip>`
+
 
 .. only:: html
 

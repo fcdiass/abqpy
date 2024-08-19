@@ -216,6 +216,10 @@ The example leads you through the Abaqus/CAE modeling process by visiting each o
 
       :download:`Download Python source code: cantilever.py <cantilever.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: cantilever.zip <cantilever.zip>`
+
 
 .. only:: html
 
