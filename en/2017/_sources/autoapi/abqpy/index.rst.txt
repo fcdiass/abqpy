@@ -17,3 +17,19 @@ Submodules
    /autoapi/abqpy/run/index
 
 
+Attributes
+----------
+
+.. autoapisummary::
+
+   abqpy.__version__
+   abqpy.__semver__
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+
+.. py:data:: __semver__
+
