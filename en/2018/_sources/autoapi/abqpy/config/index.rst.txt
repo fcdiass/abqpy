@@ -34,13 +34,13 @@ Module Contents
 
    Bases: :py:obj:`pydantic.BaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.9/concepts/models/
 
    A base class for creating Pydantic models.
 
    .. attribute:: __class_vars__
 
-      The names of classvars defined on the model.
+      The names of the class variables defined on the model.
 
    .. attribute:: __private_attributes__
 
@@ -48,7 +48,7 @@ Module Contents
 
    .. attribute:: __signature__
 
-      The signature for instantiating the model.
+      The synthesized `__init__` [`Signature`][inspect.Signature] of the model.
 
    .. attribute:: __pydantic_complete__
 
@@ -56,7 +56,7 @@ Module Contents
 
    .. attribute:: __pydantic_core_schema__
 
-      The pydantic-core schema used to build the SchemaValidator and SchemaSerializer.
+      The core schema of the model.
 
    .. attribute:: __pydantic_custom_init__
 
@@ -82,35 +82,35 @@ Module Contents
 
    .. attribute:: __pydantic_root_model__
 
-      Whether the model is a `RootModel`.
+      Whether the model is a [`RootModel`][pydantic.root_model.RootModel].
 
    .. attribute:: __pydantic_serializer__
 
-      The pydantic-core SchemaSerializer used to dump instances of the model.
+      The `pydantic-core` `SchemaSerializer` used to dump instances of the model.
 
    .. attribute:: __pydantic_validator__
 
-      The pydantic-core SchemaValidator used to validate instances of the model.
+      The `pydantic-core` `SchemaValidator` used to validate instances of the model.
 
    .. attribute:: __pydantic_extra__
 
-      An instance attribute with the values of extra fields from validation when
-      `model_config['extra'] == 'allow'`.
+      A dictionary containing extra values, if [`extra`][pydantic.config.ConfigDict.extra]
+      is set to `'allow'`.
 
    .. attribute:: __pydantic_fields_set__
 
-      An instance attribute with the names of fields explicitly set.
+      The names of fields explicitly set during instantiation.
 
    .. attribute:: __pydantic_private__
 
-      Instance attribute with the values of private attributes set on the model instance.
+      Values of private attributes set on the model instance.
 
 
    .. autoclasstoc::
 
    .. py:method:: model_dump(**kwargs) -> dict[str, Any]
 
-      Usage docs: https://docs.pydantic.dev/2.8/concepts/serialization/#modelmodel_dump
+      Usage docs: https://docs.pydantic.dev/2.9/concepts/serialization/#modelmodel_dump
 
       Generate a dictionary representation of the model, optionally specifying which fields to include or exclude.
 
@@ -137,13 +137,13 @@ Module Contents
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.9/concepts/models/
 
    A base class for creating Pydantic models.
 
    .. attribute:: __class_vars__
 
-      The names of classvars defined on the model.
+      The names of the class variables defined on the model.
 
    .. attribute:: __private_attributes__
 
@@ -151,7 +151,7 @@ Module Contents
 
    .. attribute:: __signature__
 
-      The signature for instantiating the model.
+      The synthesized `__init__` [`Signature`][inspect.Signature] of the model.
 
    .. attribute:: __pydantic_complete__
 
@@ -159,7 +159,7 @@ Module Contents
 
    .. attribute:: __pydantic_core_schema__
 
-      The pydantic-core schema used to build the SchemaValidator and SchemaSerializer.
+      The core schema of the model.
 
    .. attribute:: __pydantic_custom_init__
 
@@ -185,28 +185,28 @@ Module Contents
 
    .. attribute:: __pydantic_root_model__
 
-      Whether the model is a `RootModel`.
+      Whether the model is a [`RootModel`][pydantic.root_model.RootModel].
 
    .. attribute:: __pydantic_serializer__
 
-      The pydantic-core SchemaSerializer used to dump instances of the model.
+      The `pydantic-core` `SchemaSerializer` used to dump instances of the model.
 
    .. attribute:: __pydantic_validator__
 
-      The pydantic-core SchemaValidator used to validate instances of the model.
+      The `pydantic-core` `SchemaValidator` used to validate instances of the model.
 
    .. attribute:: __pydantic_extra__
 
-      An instance attribute with the values of extra fields from validation when
-      `model_config['extra'] == 'allow'`.
+      A dictionary containing extra values, if [`extra`][pydantic.config.ConfigDict.extra]
+      is set to `'allow'`.
 
    .. attribute:: __pydantic_fields_set__
 
-      An instance attribute with the names of fields explicitly set.
+      The names of fields explicitly set during instantiation.
 
    .. attribute:: __pydantic_private__
 
-      Instance attribute with the values of private attributes set on the model instance.
+      Values of private attributes set on the model instance.
 
 
    .. autoclasstoc::
@@ -276,13 +276,13 @@ Module Contents
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.9/concepts/models/
 
    A base class for creating Pydantic models.
 
    .. attribute:: __class_vars__
 
-      The names of classvars defined on the model.
+      The names of the class variables defined on the model.
 
    .. attribute:: __private_attributes__
 
@@ -290,7 +290,7 @@ Module Contents
 
    .. attribute:: __signature__
 
-      The signature for instantiating the model.
+      The synthesized `__init__` [`Signature`][inspect.Signature] of the model.
 
    .. attribute:: __pydantic_complete__
 
@@ -298,7 +298,7 @@ Module Contents
 
    .. attribute:: __pydantic_core_schema__
 
-      The pydantic-core schema used to build the SchemaValidator and SchemaSerializer.
+      The core schema of the model.
 
    .. attribute:: __pydantic_custom_init__
 
@@ -324,28 +324,28 @@ Module Contents
 
    .. attribute:: __pydantic_root_model__
 
-      Whether the model is a `RootModel`.
+      Whether the model is a [`RootModel`][pydantic.root_model.RootModel].
 
    .. attribute:: __pydantic_serializer__
 
-      The pydantic-core SchemaSerializer used to dump instances of the model.
+      The `pydantic-core` `SchemaSerializer` used to dump instances of the model.
 
    .. attribute:: __pydantic_validator__
 
-      The pydantic-core SchemaValidator used to validate instances of the model.
+      The `pydantic-core` `SchemaValidator` used to validate instances of the model.
 
    .. attribute:: __pydantic_extra__
 
-      An instance attribute with the values of extra fields from validation when
-      `model_config['extra'] == 'allow'`.
+      A dictionary containing extra values, if [`extra`][pydantic.config.ConfigDict.extra]
+      is set to `'allow'`.
 
    .. attribute:: __pydantic_fields_set__
 
-      An instance attribute with the names of fields explicitly set.
+      The names of fields explicitly set during instantiation.
 
    .. attribute:: __pydantic_private__
 
-      Instance attribute with the values of private attributes set on the model instance.
+      Values of private attributes set on the model instance.
 
 
    .. autoclasstoc::
@@ -365,13 +365,13 @@ Module Contents
 
    Bases: :py:obj:`CompatibleBaseModel`
 
-   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.9/concepts/models/
 
    A base class for creating Pydantic models.
 
    .. attribute:: __class_vars__
 
-      The names of classvars defined on the model.
+      The names of the class variables defined on the model.
 
    .. attribute:: __private_attributes__
 
@@ -379,7 +379,7 @@ Module Contents
 
    .. attribute:: __signature__
 
-      The signature for instantiating the model.
+      The synthesized `__init__` [`Signature`][inspect.Signature] of the model.
 
    .. attribute:: __pydantic_complete__
 
@@ -387,7 +387,7 @@ Module Contents
 
    .. attribute:: __pydantic_core_schema__
 
-      The pydantic-core schema used to build the SchemaValidator and SchemaSerializer.
+      The core schema of the model.
 
    .. attribute:: __pydantic_custom_init__
 
@@ -413,28 +413,28 @@ Module Contents
 
    .. attribute:: __pydantic_root_model__
 
-      Whether the model is a `RootModel`.
+      Whether the model is a [`RootModel`][pydantic.root_model.RootModel].
 
    .. attribute:: __pydantic_serializer__
 
-      The pydantic-core SchemaSerializer used to dump instances of the model.
+      The `pydantic-core` `SchemaSerializer` used to dump instances of the model.
 
    .. attribute:: __pydantic_validator__
 
-      The pydantic-core SchemaValidator used to validate instances of the model.
+      The `pydantic-core` `SchemaValidator` used to validate instances of the model.
 
    .. attribute:: __pydantic_extra__
 
-      An instance attribute with the values of extra fields from validation when
-      `model_config['extra'] == 'allow'`.
+      A dictionary containing extra values, if [`extra`][pydantic.config.ConfigDict.extra]
+      is set to `'allow'`.
 
    .. attribute:: __pydantic_fields_set__
 
-      An instance attribute with the names of fields explicitly set.
+      The names of fields explicitly set during instantiation.
 
    .. attribute:: __pydantic_private__
 
-      Instance attribute with the values of private attributes set on the model instance.
+      Values of private attributes set on the model instance.
 
 
    .. autoclasstoc::
@@ -470,13 +470,13 @@ Module Contents
 
    Bases: :py:obj:`AbaqusCAEConfig`, :py:obj:`AbaqusPythonConfig`
 
-   Usage docs: https://docs.pydantic.dev/2.8/concepts/models/
+   Usage docs: https://docs.pydantic.dev/2.9/concepts/models/
 
    A base class for creating Pydantic models.
 
    .. attribute:: __class_vars__
 
-      The names of classvars defined on the model.
+      The names of the class variables defined on the model.
 
    .. attribute:: __private_attributes__
 
@@ -484,7 +484,7 @@ Module Contents
 
    .. attribute:: __signature__
 
-      The signature for instantiating the model.
+      The synthesized `__init__` [`Signature`][inspect.Signature] of the model.
 
    .. attribute:: __pydantic_complete__
 
@@ -492,7 +492,7 @@ Module Contents
 
    .. attribute:: __pydantic_core_schema__
 
-      The pydantic-core schema used to build the SchemaValidator and SchemaSerializer.
+      The core schema of the model.
 
    .. attribute:: __pydantic_custom_init__
 
@@ -518,28 +518,28 @@ Module Contents
 
    .. attribute:: __pydantic_root_model__
 
-      Whether the model is a `RootModel`.
+      Whether the model is a [`RootModel`][pydantic.root_model.RootModel].
 
    .. attribute:: __pydantic_serializer__
 
-      The pydantic-core SchemaSerializer used to dump instances of the model.
+      The `pydantic-core` `SchemaSerializer` used to dump instances of the model.
 
    .. attribute:: __pydantic_validator__
 
-      The pydantic-core SchemaValidator used to validate instances of the model.
+      The `pydantic-core` `SchemaValidator` used to validate instances of the model.
 
    .. attribute:: __pydantic_extra__
 
-      An instance attribute with the values of extra fields from validation when
-      `model_config['extra'] == 'allow'`.
+      A dictionary containing extra values, if [`extra`][pydantic.config.ConfigDict.extra]
+      is set to `'allow'`.
 
    .. attribute:: __pydantic_fields_set__
 
-      An instance attribute with the names of fields explicitly set.
+      The names of fields explicitly set during instantiation.
 
    .. attribute:: __pydantic_private__
 
-      Instance attribute with the values of private attributes set on the model instance.
+      Values of private attributes set on the model instance.
 
 
    .. autoclasstoc::
