@@ -10,6 +10,9 @@ from typing_extensions import Self
 class AbqpyCLIBase:
     """Base class for Abaqus/CAE command line interface to run Abaqus commands."""
 
+    def __init__(self, print_commands: bool = True):
+        self.print_commands = print_commands
+
     def _parse_options(self, **options: str | int | bool | None) -> str:
         """Parse options to be passed to Abaqus/CAE command line interface.
 
@@ -24,7 +27,8 @@ class AbqpyCLIBase:
         """Run custom command."""
         cmd = cmd.strip()
         message = f"Running the following command: {cmd}"
-        print("", "-" * len(message), message, "-" * len(message), sep="\n")
+        if self.print_commands:
+            print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
 
     def abaqus(self, *args, **options):
